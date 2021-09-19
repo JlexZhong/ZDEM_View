@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1172</width>
+    <height>886</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_4">
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>350</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>350</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>黑体</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::DefaultContextMenu</enum>
+     </property>
+     <property name="acceptDrops">
+      <bool>false</bool>
+     </property>
+     <property name="tabPosition">
+      <enum>QTabWidget::East</enum>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <property name="elideMode">
+      <enum>Qt::ElideNone</enum>
+     </property>
+     <property name="documentMode">
+      <bool>false</bool>
+     </property>
+     <property name="tabsClosable">
+      <bool>true</bool>
+     </property>
+     <property name="movable">
+      <bool>true</bool>
+     </property>
+     <property name="tabBarAutoHide">
+      <bool>false</bool>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="icon">
+       <iconset>
+        <normaloff>../icons/dataLog.png</normaloff>../icons/dataLog.png</iconset>
+      </attribute>
+      <attribute name="title">
+       <string>数据记录</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <property name="leftMargin">
+        <number>1</number>
+       </property>
+       <property name="topMargin">
+        <number>1</number>
+       </property>
+       <property name="rightMargin">
+        <number>1</number>
+       </property>
+       <property name="bottomMargin">
+        <number>1</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label_dataText">
+         <property name="font">
+          <font>
+           <family>黑体</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>数据信息</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line_12">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextBrowser" name="textBrowser_data">
+         <property name="font">
+          <font>
+           <family>黑体</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="horizontalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOn</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="icon">
+       <iconset>
+        <normaloff>../icons/figureParam.png</normaloff>../icons/figureParam.png</iconset>
+      </attribute>
+      <attribute name="title">
+       <string>图像参数</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>图像参数</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolBox" name="toolBox_2">
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="currentIndex">
+          <number>2</number>
+         </property>
+         <property name="tabSpacing">
+          <number>6</number>
+         </property>
+         <widget class="QWidget" name="tools_move">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>301</width>
+            <height>309</height>
+           </rect>
+          </property>
+          <attribute name="label">
+           <string>坐标偏移量</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_xmove_2">
+             <property name="text">
+              <string>X轴</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_ymove_2">
+             <property name="text">
+              <string>Y轴</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="lineEdit_2"/>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="lineEdit"/>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tools_plotWall">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>301</width>
+            <height>309</height>
+           </rect>
+          </property>
+          <attribute name="label">
+           <string>绘制墙</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QCheckBox" name="checkBox_plotWall">
+             <property name="text">
+              <string>绘制墙体</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_color">
+          <attribute name="label">
+           <string>颜色设置</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="0" column="1">
+            <widget class="QComboBox" name="comboBox">
+             <item>
+              <property name="text">
+               <string>ZDEM默认颜色</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>颜色设置</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QPushButton" name="pushButton">
+             <property name="text">
+              <string>导入其他</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_5">
+      <attribute name="title">
+       <string>页</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="icon">
+       <iconset>
+        <normaloff>../icons/axisParam.png</normaloff>../icons/axisParam.png</iconset>
+      </attribute>
+      <attribute name="title">
+       <string>坐标轴参数</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item>
+        <widget class="QFrame" name="frame_axis">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <property name="horizontalSpacing">
+           <number>3</number>
+          </property>
+          <property name="verticalSpacing">
+           <number>10</number>
+          </property>
+          <item row="6" column="1">
+           <widget class="QFontComboBox" name="fontCBox_X">
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>16777215</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="17" column="0">
+           <widget class="QLabel" name="label_units">
+            <property name="text">
+             <string>数据单位</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="label_XFont">
+            <property name="text">
+             <string>字体样式</string>
+            </property>
+           </widget>
+          </item>
+          <item row="15" column="1">
+           <widget class="QLineEdit" name="lineEdit_ymin"/>
+          </item>
+          <item row="14" column="0">
+           <widget class="QLabel" name="label_xmin">
+            <property name="text">
+             <string>XMin</string>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="0" colspan="4">
+           <widget class="Line" name="line_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="14" column="3">
+           <widget class="QLineEdit" name="lineEdit_xmax"/>
+          </item>
+          <item row="12" column="2">
+           <widget class="QCheckBox" name="cBox_leftAxis">
+            <property name="text">
+             <string>Left</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="2">
+           <widget class="QLabel" name="label_XFontSize">
+            <property name="text">
+             <string>字体大小</string>
+            </property>
+           </widget>
+          </item>
+          <item row="12" column="1">
+           <widget class="QCheckBox" name="cBox_bottomAxis">
+            <property name="text">
+             <string>Bottom</string>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="3">
+           <widget class="QSpinBox" name="spinBox_YSIze"/>
+          </item>
+          <item row="3" column="3">
+           <widget class="QSpinBox" name="spinBox_titleSize">
+            <property name="font">
+             <font>
+              <family>黑体</family>
+              <pointsize>9</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item row="11" column="0" colspan="3">
+           <widget class="QLabel" name="label_axisTitle">
+            <property name="font">
+             <font>
+              <family>黑体</family>
+              <pointsize>12</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>坐标轴显示/隐藏：</string>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1" colspan="2">
+           <widget class="QLineEdit" name="lineEdit_xlabel"/>
+          </item>
+          <item row="17" column="1">
+           <widget class="QComboBox" name="cBox_units">
+            <item>
+             <property name="text">
+              <string>km</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>m</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="15" column="3">
+           <widget class="QLineEdit" name="lineEdit_ymax"/>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="Xlabel">
+            <property name="font">
+             <font>
+              <family>黑体</family>
+              <pointsize>12</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>X轴标签</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="3">
+           <widget class="QSpinBox" name="spinBox_XSize"/>
+          </item>
+          <item row="9" column="0">
+           <widget class="QLabel" name="label_YFont">
+            <property name="text">
+             <string>字体样式</string>
+            </property>
+           </widget>
+          </item>
+          <item row="14" column="1">
+           <widget class="QLineEdit" name="lineEdit_xmin"/>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_titleFont">
+            <property name="text">
+             <string>字体样式</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="0">
+           <widget class="QLabel" name="Ylabel">
+            <property name="font">
+             <font>
+              <family>黑体</family>
+              <pointsize>12</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Y轴标签</string>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="1">
+           <widget class="QFontComboBox" name="fontCBox_Y">
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>16777215</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QFontComboBox" name="fontCBox_figure">
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>16777215</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="16" column="0" colspan="4">
+           <widget class="Line" name="line_6">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="0" colspan="4">
+           <widget class="Line" name="line_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="2">
+           <widget class="QLabel" name="label_YFontSize">
+            <property name="text">
+             <string>字体大小</string>
+            </property>
+           </widget>
+          </item>
+          <item row="14" column="2">
+           <widget class="QLabel" name="label_xmax">
+            <property name="text">
+             <string>XMax</string>
+            </property>
+           </widget>
+          </item>
+          <item row="13" column="0" colspan="4">
+           <widget class="Line" name="line_5">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" colspan="4">
+           <widget class="QLabel" name="label_axisMain">
+            <property name="text">
+             <string>图像坐标轴属性</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="15" column="0">
+           <widget class="QLabel" name="label_ymin">
+            <property name="text">
+             <string>yMin</string>
+            </property>
+           </widget>
+          </item>
+          <item row="15" column="2">
+           <widget class="QLabel" name="label_ymax">
+            <property name="text">
+             <string>YMax</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="1" colspan="2">
+           <widget class="QLineEdit" name="lineEdit_ylabel"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_Title">
+            <property name="font">
+             <font>
+              <family>黑体</family>
+              <pointsize>12</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>图名</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="2">
+           <widget class="QLabel" name="label_titleFontSize">
+            <property name="text">
+             <string>字体大小</string>
+            </property>
+           </widget>
+          </item>
+          <item row="12" column="3">
+           <widget class="QCheckBox" name="cBox_rightAxis">
+            <property name="text">
+             <string>Right</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0" colspan="4">
+           <widget class="Line" name="line">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1" colspan="2">
+           <widget class="QLineEdit" name="lineEdit_title"/>
+          </item>
+          <item row="12" column="0">
+           <widget class="QCheckBox" name="cBox_topAxis">
+            <property name="text">
+             <string>Top</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="4">
+           <widget class="Line" name="line_11">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_4">
+      <attribute name="icon">
+       <iconset>
+        <normaloff>../icons/PaperPicture.png</normaloff>../icons/PaperPicture.png</iconset>
+      </attribute>
+      <attribute name="title">
+       <string>论文格式图</string>
+      </attribute>
+      <widget class="QToolBox" name="toolBox">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>100</y>
+         <width>77</width>
+         <height>133</height>
+        </rect>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="page">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>77</width>
+          <height>69</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>Page 1</string>
+        </attribute>
+       </widget>
+       <widget class="QWidget" name="page_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>77</width>
+          <height>69</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>Page 2</string>
+        </attribute>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
